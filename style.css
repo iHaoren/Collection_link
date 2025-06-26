@@ -1,0 +1,144 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --bg-primary: teal;
+    --bg-secondary: lightgray;
+    --txt-primary: white;
+    --txt-secondary: black;
+    --icons-bg-primary: crimson;
+    --icons-bg-secondary: #777777;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+
+}
+
+.container-2 {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid black;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 32px;
+    margin: 8px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 28px;
+    color: var(--icons-bg-primary);
+}
+
+.tittle {
+    font-size: 2em;
+}
+
+.description {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: .8em;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--bg-secondary);
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    transform: rotate(6deg);
+    transition: 0.3s ease-in-out;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.text {
+        text-decoration: none;
+    }
+
+@media screen and (max-width: 476px) {
+    .container {
+        background-color: #ffff;
+    }
+
+    .container-2 {
+        display: none;
+    }
+
+    .card {
+        width: 75%;
+    }
+
+    .tittle {
+        font-size: 3em;
+    }
+
+    .description {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 16px;
+        font-size: 1.5em;
+    }
+
+    .text {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+
+    .container {
+        display: none;
+    }
+
+    .container-2 {
+        display: block;
+    }
+}
